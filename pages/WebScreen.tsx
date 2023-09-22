@@ -3,6 +3,7 @@ import React, {useContext, useRef} from 'react';
 import {WebView} from 'react-native-webview';
 import {GlobalContext} from '../context/GlobalContext';
 import {BASE_UI_URL} from "../constants/API";
+import {StatusBar} from "expo-status-bar";
 
 const WebScreen = () => {
     const globalContext = useContext(GlobalContext);
@@ -46,6 +47,7 @@ const WebScreen = () => {
 
     return (
         <SafeAreaView style={{height: '100%'}}>
+            <StatusBar backgroundColor="#000000" style="light"/>
             <WebView
                 ref={webview}
                 injectedJavaScript={debugging}
