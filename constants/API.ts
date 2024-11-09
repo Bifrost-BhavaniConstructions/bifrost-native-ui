@@ -1,4 +1,4 @@
-export const BASE_URL = 'https://bifrost-api-wxrn.onrender.com';
+export const BASE_URL = 'https://bhavaniconstructions.com';
 /**
  * export const BASE_URL = 'http://192.168.1.3:8080';
  */

@@ -15,6 +15,7 @@ const Input = ({
   max,
   onPressIn,
   inputStyle,
+  autoCapitalize = "none"
 }: {
   placeholder: string | undefined,
   setFieldValue: Function,
@@ -27,6 +28,7 @@ const Input = ({
   keyboardType?: KeyboardTypeOptions,
   max?: any,
   onPressIn?: ((e: NativeSyntheticEvent<NativeTouchEvent>) => void),
+  autoCapitalize?: "none" | "sentences" | "words" | "characters" | undefined;
   inputStyle?: any
 }) => {
   return (
@@ -40,6 +42,7 @@ const Input = ({
         editable={editable}
         secureTextEntry={secureTextEntry}
         keyboardType={keyboardType}
+        autoCapitalize={autoCapitalize}
         maxLength={max}
         onPressIn={onPressIn}
       />

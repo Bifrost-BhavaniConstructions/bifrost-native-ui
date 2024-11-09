@@ -81,6 +81,7 @@ const Login = ({commonAPIRequest}: any) => {
                                     keyword="username"
                                     error={formik.errors.username}
                                     touched={formik.touched.username}
+                                    keyboardType="email-address"
                                 />
                                 <Input
                                     placeholder={'Password'}

@@ -47,7 +47,6 @@ const WebScreen = () => {
 
     return (
         <SafeAreaView style={{height: '100%'}}>
-            <StatusBar backgroundColor="#000000" style="light"/>
             <WebView
                 ref={webview}
                 injectedJavaScript={debugging}
